@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess My Number</title>
+  <!--========== CSS =============-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <button class="play-again">Play Again</button>
+    <div class="default__content">
+      <div class="main__text">
+        <p class="text">I am thinking of a number between 1-20</p>
+        <p class="texts">Can you guess it?</p>
+      </div>
+      <div class="game">
+        <input type="number" name="number" id="number">
+        <button class="check">
+          guess
+        </button>
+      </div>
+      <p class="score">Scores:<span id="score"> 0</span></p>
+      <div class="content">
+        <p class="value"></p>
+      </div>
+      <p class="chances">You have <span class="chance">5</span> chances</p>
+    </div>
+    <div class="losing hidden">
+      <div class="lose__text">
+        <p>You Lost!</p>
+        <p>The number was <span class="secret"></span></p>
+        <p>Play Again</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+<!--=========== JAVASCRIPT ==========-->
+<script src="script.js"></script>
+
+</html>
