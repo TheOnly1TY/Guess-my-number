@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --soft-blue: hsl(210, 100%, 56%);
+  --card-white: hsl(33, 100%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --hover-blue: hsl(210, 100%, 66%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--soft-blue);
+}
+.container {
+  width: 32.5rem;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+.losing {
+  display: grid;
+  place-items: center;
+  height: 17.5rem;
+}
+.hidden {
+  display: none;
+}
+.lose__text {
+  text-align: center;
+  padding: 1rem 8rem;
+  color: red;
+  font-size: 1.3rem;
+  background-color: #ff7f7f;
+  display: inline-block;
+}
+.play-again {
+  background-color: var(--soft-blue);
+  border: none;
+  color: var(--card-white);
+  padding: 0.8rem 2rem;
+  margin: 1rem;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.main__text {
+  text-align: center;
+  color: var(--dark-brown);
+  font-size: 1.5rem;
+}
+.game {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 5rem;
+}
+#number {
+  width: 7.5rem;
+  height: 3.1875rem;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+.check {
+  background-color: var(--soft-blue);
+  border: none;
+  padding: 0 2.7rem;
+  border-radius: 5px;
+  color: var(--card-white);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.score {
+  display: flex;
+  justify-content: end;
+  margin: 0 5rem;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  width: 25rem;
+  height: 3.125rem;
+  margin: 0 auto;
+  display: none;
+}
+
+.chances {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+.chance {
+  margin: 0 0.2em;
+}
+.play-again:hover,
+.check:hover {
+  background-color: var(--hover-blue);
+}
+@media (max-width: 580px) {
+  .container {
+    width: 19.5rem;
+  }
+  .losing {
+    height: 19rem;
+  }
+  .lose__text {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+  }
+  .play-again {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  .main__text {
+    font-size: 1rem;
+  }
+  .game {
+    flex-direction: column;
+    margin: 2rem 2rem;
+  }
+  #number {
+    width: 15.5rem;
+    height: 3rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .check {
+    padding: 1rem 2.7rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  .score {
+    margin: 0 2rem;
+    font-size: 1rem;
+  }
+  .content {
+    font-size: 1.2rem;
+    width: 14rem;
+    margin-top: 1rem;
+  }
+
+  .chances {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+}
